@@ -1,0 +1,191 @@
+
+
+@charset "UTF-8";
+/**
+ * CEGAHCORONA
+ *
+ * CEGAHCORONA is a clean & modern HTML5 landing template. 
+ * CEGAHCORONA will make it easier for you to create your own interface.
+ *
+ * @package	CEGAHCORONA
+ * @version	0.1
+ * @author 	Ahmad Saugi
+ * @url 	https://ahmadsaugi.com
+ * 
+ */
+/**
+ * TABLE OF CONTENTS
+ * 1. Init CSS
+ * 2. Section
+ *   2.1. Header
+ *   2.2. Banner
+ *   2.3. Instruksi Mencuci Tangan
+ *   2.4. Gejala Covid
+ *   2.5. Footer
+ * 3. Utilities
+ * 4. Layouting
+ */
+
+
+/* 1. Init CSS */
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(./assets/Fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url(./assets/Fonts/Montserrat-SemiBold.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat-Regular';
+}
+
+
+/* 2.1. Header */
+header {
+  padding: 30px 0;
+}
+/* 2.2. Banner */
+.banner {
+  padding: 100px 0 170px;
+}
+.banner .banner-title {
+  font-size: 45px;
+  margin-bottom: 1rem;
+  color: #222;
+}
+.banner .banner-text {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #555;
+}
+.banner img {
+  height: 250px;
+  width: 250px;
+  float: right;
+}
+.banner .btn {
+  margin-top: 20px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  letter-spacing: .5px;
+  background-color: #f4956a;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  transition: all .2s;
+  cursor: pointer;
+}
+.banner .btn:hover {
+  background-color: #e8733f;
+}
+
+/* 2.3. Instruksi Mencuci Tangan */
+.instruction {
+  background-color: #7CD3F1;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+.instruction .instruction-text {
+  font-size: 20px;
+  line-height: 30px;
+  width: 100%;
+}
+img {
+  transition: all .3s ease-in-out; 
+}
+/* 2.4. Gejala Covid-19 */
+.gejala {
+  padding: 100px 0;
+  background-color: #EFEFEF;
+}
+.gejala .section-title, .gejala .section-subtitle {
+  color: #767070;
+}
+.gejala .gejala-text {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+.gejala img:hover, .instruction img:hover {
+  margin-left: 20px;
+  transform: scale(1.1);
+}
+
+/* 2.5. Footer */
+footer {
+  background-color: #333333;
+  padding: 70px 0
+}
+
+/* 3. Utilities */
+.font-semibold {font-family: 'Montserrat-SemiBold';}
+.text-center {text-align: center;}
+.text-white {color: #fff;}
+.text-right {text-align: right;}
+.image-center {display:flex;justify-content: center;}
+.vertical-center {display: flex; align-items: center;}
+.ml-2 {margin-left: 2rem;}
+.mr-2 {margin-right: 2rem;}
+
+
+/* 4. Layouting */
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section-body {
+  margin: 100px 0;
+}
+.section-subtitle {
+  margin-bottom: 10px;
+}
+.section-title {
+  font-size: 40px;
+}
+.row {
+	display: flex;
+	margin: 0 -15px;
+	flex-wrap: wrap;
+}
+.row + .row {
+	margin-top: 3rem;
+}
+
+[class*="col-"] {
+	padding: 0 15px;
+}
+no-pad-horizontal {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 992px)
+{
+	.container {
+		width: 960px;
+	}
+
+	.col-lg-1 { flex: none; width: calc(100% / 12 * 1)}
+	.col-lg-2 { flex: none; width: calc(100% / 12 * 2)}
+	.col-lg-3 { flex: none; width: calc(100% / 12 * 3)}
+	.col-lg-4 { flex: none; width: calc(100% / 12 * 4)}
+	.col-lg-5 { flex: none; width: calc(100% / 12 * 5)}
+	.col-lg-6 { flex: none; width: calc(100% / 12 * 6)}
+	.col-lg-7 { flex: none; width: calc(100% / 12 * 7)}
+	.col-lg-8 { flex: none; width: calc(100% / 12 * 8)}
+	.col-lg-9 { flex: none; width: calc(100% / 12 * 9)}
+	.col-lg-10 { flex: none; width: calc(100% / 12 * 10)}
+	.col-lg-11 { flex: none; width: calc(100% / 12 * 11)}
+	.col-lg-12 { flex: none; width: calc(100% / 12 * 12)}
+}
+@media screen and (max-width: 767px) {
+  .sm\:hidden {display:none}
+}
